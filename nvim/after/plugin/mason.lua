@@ -6,20 +6,16 @@ require("mason-tool-installer").setup({
         "bibtex-tidy",      -- bibtex files
         "black",            -- python
         "clang-format",     -- C and co
-        "fixjson",          -- JSON
-        "htmlbeautifier",   -- HTML
         "htmlhint",         -- HTML
         "latexindent",      -- latex
         "luacheck",         -- lua
         "luaformatter",     -- lua
-        "remark-cli",       -- markdown
+        "prettier",         -- General purpose
         "rstcheck",         -- restructured text
         "rustfmt",          -- rust
         "shellcheck",       -- shell
-        "standardjs",       -- javascript
+        "shfmt",            -- shell
         "verible",          -- systemverilog
-        "xmlformatter",     -- XML
-        "yamlfix",          -- YAML
         "yamllint",         -- YAML
     }
 })
