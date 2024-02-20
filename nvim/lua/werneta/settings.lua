@@ -1,0 +1,14 @@
+vim.opt.cmdheight = 2
+vim.opt.colorcolumn = "80"
+vim.opt.expandtab = true
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
+vim.opt.number = true
+vim.opt.ruler = true
+vim.opt.shiftwidth = 4
+vim.opt.showcmd = true
+vim.opt.signcolumn = "yes"
+vim.opt.softtabstop = 4
+vim.opt.spell = true
+vim.opt.tabstop = 4
+vim.opt.textwidth = 80
