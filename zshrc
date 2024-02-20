@@ -106,6 +106,6 @@ export GPG_TTY=`tty`
 
 export PATH="$PATH:$HOME/installs/julia/julia-1.8.2/bin"
 
-#[ -f "/home/werne/.ghcup/env" ] && source "/home/werne/.ghcup/env" # ghcup-env
-
 [ -f "/home/werneta/.ghcup/env" ] && source "/home/werneta/.ghcup/env" # ghcup-env
+
+[ -f "/home/werneta/.keysrc" ] && source "/home/werneta/.keysrc"
