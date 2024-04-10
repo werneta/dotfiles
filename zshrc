@@ -104,7 +104,7 @@ source $ZSH/oh-my-zsh.sh
 
 export GPG_TTY=`tty`
 
-export PATH="$PATH:$HOME/installs/julia/julia-1.8.2/bin"
+export PATH="$PATH:$HOME/installs/julia/julia-1.8.2/bin:/snap/bin"
 
 [ -f "/home/werneta/.ghcup/env" ] && source "/home/werneta/.ghcup/env" # ghcup-env
 

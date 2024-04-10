@@ -6,6 +6,7 @@ import XMonad
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers           -- for isFullscreen
+import XMonad.Hooks.SetWMName
 import XMonad.Layout.ThreeColumns
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig
@@ -48,7 +49,7 @@ modmask = mod4Mask
 myWorkspaces = map show [1 .. 22 :: Int]
 
 {- This one is tough.
- - 
+ -
  - We're building a list of tuples (describing keys) and commands to execute.
  - This list handles absolute workspace addressing (i.e. mod+N to go to a
  - workspace, or mod+shift+N to move a window to a workspace).  The first line
@@ -81,6 +82,7 @@ switchWs = [((m .|. modmask, k), windows $ f i)
 myConfig xmproc = def {
         manageHook = manageDocks <+> myManageHook <+> manageHook def,
         layoutHook = avoidStruts myLayout,
+        startupHook = setWMName "LG3D",
         workspaces = myWorkspaces,
         modMask = modmask,
         logHook = workspaceNamesPP xmobarPP {
